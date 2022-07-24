@@ -1,0 +1,285 @@
+body{
+    background-image: url(https://www.publicdomainpictures.net/pictures/230000/nahled/gradient-blue.jpg);
+    background-size: cover;
+    height: auto;
+ 
+}
+
+.header{
+    color: black;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: center;
+    padding: 16px;
+    padding-top: 36px;
+
+}
+
+.header > p{
+    font-size: 16px;
+    
+
+}
+
+.container {
+    max-width: 1140px;
+    position: relative;
+    justify-content: center;
+
+}
+
+.panel{
+    position: relative;
+    display: flex;
+    color: rgb(240, 240, 231);
+    font-size: larger;
+    margin: auto;
+    padding-top: 30px;
+   
+}
+
+.panel-one{
+    background-color: rgb(56, 68, 101);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.panel-one > .box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-bottom: 1px solid rgb(70 79 106);
+    padding:16px;
+
+}
+
+.panel-one > .box > span{
+    margin-left: 18px;
+    font-size: 16px;
+
+}
+
+.panel-one > .box > .circle > span{
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 14px;
+
+}
+
+.panel-two{
+    background-color: rgb(255, 255, 255);
+    border-radius:0 10px 10px 0;
+    text-align: center;
+    
+}
+.btn.disabled, .btn:disabled {
+    opacity: 2.65 !important;
+}
+.circle {
+    position: relative;
+    height: 45px;
+    width: 45px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 50%;
+    margin-left:16px;
+
+}
+
+button, select {
+ outline: 0 !important;
+}
+
+.circle.active{
+    background-color: #4CAF50;
+ 
+}
+
+.error{
+    color:red;
+    font-size:12px;
+    float: left;
+}
+
+.d-flex{
+    color: gray;
+}
+.form-group.date {
+    margin-top: 23px;
+}
+.btnsubmit{
+        background-color: #4CAF50;
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;       
+        border: none;
+        margin-left: 390px;
+        margin-top: 54px;
+}
+ 
+.box2{
+    position: relative;
+    display: flex !important;
+    align-items: flex-start;
+    justify-content: left; 
+    padding-top: 20px;  
+
+}
+
+.box2 > .choice{
+    text-align: start;
+
+}
+
+.box2 > .choice > p{
+    color: black;
+    line-height: 20px;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 16px;
+    position: relative;
+
+}
+
+.box2 > .choice > span{
+    color: black;
+    margin-left: 16px;
+    font-weight: 600;
+    font-family: sans-serif; 
+
+}
+
+.circle2 {
+    position: relative;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 50%;
+    margin-left:16px;
+    border: none;
+    background-image: url(images/1.png);
+    background-size: cover;
+}
+
+.circle3 {
+    position: relative;
+    height: 65px;
+    width: 65px;
+    text-align: center;
+    background-color: gray;
+    border-radius: 50%;
+    margin-left:16px;
+    border: none;
+    background-image: url(images/icons8-city-buildings-48.png);
+    background-size: cover;
+  
+}
+
+.circle2:hover,.circle3:hover{
+    background-color: #4CAF50;
+
+}
+.button-gp {
+    margin: 10px 0px -27px 0px;
+}
+.button-gp >.btn-one{
+    width: 150px;
+    height: 130px;
+    background-size: cover;
+    background-image: url("images/chase-icon.jpg");
+    border: 0.05px solid rgb(223, 219, 219);
+    border-radius: 0%;
+    float: left;
+    margin-left: 12px;
+    
+}
+
+.button-gp >.btn-two{
+    width: 150px;
+    height: 130px;
+    background-image: url("images/boa.png");
+    background-size: cover;
+    border: 0.05px solid rgb(223, 219, 219);
+    border-radius: 0%;  
+
+}
+
+.button-gp >.btn-three{
+    width: 150px;
+    height: 130px;
+    background-image: url("images/zyro-image.png");
+    background-size: cover;
+    border: 0.05px solid rgb(223, 219, 219);
+    border-radius: 0%;
+    float: right;
+    margin-right: 12px;
+
+}
+
+.button-gp >.btn-four{
+    width: 150px;  
+    height: 130px;
+    background-image: url("images/Khothietke.net-0027.jpg");
+    background-size: cover; 
+    border: 0.05px solid rgb(223, 219, 219);
+    border-radius: 0%;
+    float: left;
+    margin-left: 12px;
+
+}
+
+.button-gp >.btn-five{
+    width: 150px; 
+    height: 130px;
+    background-image: url("images/usbank.jpeg");
+    background-size: cover;
+    border: 0.05px solid rgb(223, 219, 219);
+    border-radius: 0%;
+
+}
+
+.button-gp >.btn-six{
+    width: 150px;
+    height: 130px;
+    background-image: url("images/bmo.jpg");
+    background-size: cover;
+    border: 0.05px solid rgb(223, 219, 219);
+    border-radius: 0%;
+    float: right;
+    margin-right: 12px;
+
+}
+
+.btn-one:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.btn-two:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.btn-three:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.btn-four:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+.btn-five:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}
+
+.btn-six:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}

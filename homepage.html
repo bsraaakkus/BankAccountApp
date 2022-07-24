@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container panel">
+        <div class="panel-one">
+            <div class="box">
+                <div class="circle active">
+                    <span>01</span>
+                </div>
+                <span>Personal Information</span>
+            </div>
+            <div class="box">
+                <div class="circle">
+                    <span>02</span>
+                </div>
+                <span>Connect Bank Account</span>
+            </div>
+            <div class="box">
+                <div class="circle">
+                    <span>03</span>
+                </div>
+                <span>Set Financial Goals</span>
+            </div>
+        
+        </div>
+   
+        <div class="panel-two">
+            <div class="header">
+                <h3>Personal Information</h3>
+                <p>Please enter your information and proceed to the next<br>
+                    step so we can build your accounts.
+                </p>
+            </div>  
+            <form name="form" id="form" class="form m-3" method="post" action="#">     
+                <div class="container header2 ">
+                    <div class="row form-group">
+                        <div class="col-6">
+                            <input type="text" name="First Name" id="firstName"  class="form-control" pattern="[A-Za-z]*" required="required" placeholder="First Name" autocomplete="off"/>  
+                            </div>
+                        <div class="col-6">
+                            <input type="text" name="Last Name" id="lasstName"  class="form-control" pattern="[A-Za-z]*" required placeholder="Last Name" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="form-group"> 
+                            <input type="email" name="e-mail" id="email" required  class="form-control"   placeholder="example@example.com" autocomplete="off">
+                    </div>
+                    <div class="form-group"> 
+                        <input type="tel" name="telephone" id="telephone"  class="form-control"  pattern="[0-9]{11}" required placeholder="0(___)___ __ __" autocomplete="off">
+                    </div>
+                    <div class="form-group date"> 
+                        <label class="d-flex">Birth Date:</label>
+                        <div class="row flex-row">
+                            <div class="col-4">
+                            <select id="day" class="custom-select" name="day"></select>
+                            </div>
+                            <div class="col-4">
+                             <select id="month" class="custom-select" name="month"></select>
+                            </div>
+                            <div class="col-4">
+                                <select id="year" class="custom-select"name="year" onchange="onChangeCalculateAge(this)"></select>
+                            </div>
+                        </div>
+                     </div>
+                    <div class="form-group">
+                        <input type="text" name="Age" id="age"  class="form-control"  required  placeholder="Age" >
+
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btnsubmit" id="btnsubmit"
+                        ></button>
+
+                    </div>
+                </div>
+            
+            </form>
+        </div>
+    </div>
+   
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+</body>
+
+    <script src="main.js"></script>
+</html>
