@@ -1,2 +1,2 @@
 # BankAccountApp
-Html ve css kullanarak ekranı hazırlamanıdım. Javascript ile kontrolleri gerçekleştirdim.
+Html ve css kullanarak ekranı hazırladım. Javascript ile kontrolleri gerçekleştirdim.
