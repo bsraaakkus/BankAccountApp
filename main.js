@@ -221,20 +221,20 @@ function checkInput(e){
    let regexStr = /^[A-Za-z]+$/;
    let regexNum =  /^[0-9]+$/;
 
-   let s = firstName.value;
+   let firstNameValue = firstName.value;
 
-   if (!regexStr.test(s) ) {
+   if (!regexStr.test(firstNameValue) ) {
       firstName.value="";
    }
 
-   let l = lastName.value;
+   let lastNameValue = lastName.value;
 
-   if (!regexStr.test(l) ) {
+   if (!regexStr.test(lastNameValue) ) {
       lastName.value="";
    }
-   let a = age.value;
+   let ageValue = age.value;
 
-   if (!regexNum.test(a) ) {
+   if (!regexNum.test(ageValue) ) {
       age.value="";
    }
  
