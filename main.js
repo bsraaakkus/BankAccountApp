@@ -20,7 +20,7 @@ formButton.onclick=()=>{
       window.location.href = 'connectBankPage.html';
    }
 }
-
+//Select Option da gün ay ve yıl değerlerinin optiona düşmesi için oluşturulan döngü
 function dateFill(){
    const date = document.querySelector('.date');
    if(date!=null){
@@ -47,7 +47,7 @@ function dateFill(){
    }
    
 }
-
+//input girişlerinin boş olması durumunda uyarı 
 function errorMessage(el){
    const value = el.value.trim();
    if(value == "" ){
@@ -57,7 +57,7 @@ function errorMessage(el){
    return true;
 
 }
-
+//dolu inputların kontrolüne göre uyarı mesajını temizleme
 function removeErrorMessages(doc){
    const errorElem = doc.querySelectorAll('.error');
    Array.prototype.map.call(errorElem, el=>{
@@ -68,7 +68,7 @@ function removeErrorMessages(doc){
    });
    
 }
-
+// e-mail inputu için '@' kontrolü ve sonrasında '.com' kontrolü
 function emailValidate(){
 
    const email = document.getElementById("email");
@@ -85,6 +85,7 @@ function emailValidate(){
 
       emailError = true;
 
+
     } else {
 
       email.classList.add("is-invalid");
@@ -96,7 +97,7 @@ function emailValidate(){
   });
 
 }
-
+//First Name alanı için string kontrolü
 function firstNameValidate(){
 
    const firstName = document.getElementById("firstName");
@@ -124,6 +125,7 @@ function firstNameValidate(){
   });
 
 }
+//last name için string kontrolü
 function lastNameValidate(){
 
    const lastName = document.getElementById("lasstName");
@@ -134,7 +136,7 @@ function lastNameValidate(){
 
     let s = lastName.value;
 
-    if (regex.test(s)) {
+    if (regex.test(s) ) {
 
       lastName.classList.remove("is-invalid");
 
@@ -151,7 +153,7 @@ function lastNameValidate(){
   });
 
 }
-
+//telefon alanı için '0' ile başlayarak rakamlardan oluşacak şekilde 11 karakter giriş kontrolü 
 function phoneValidate(){
    
   const phone = document.getElementById("telephone");
@@ -197,14 +199,43 @@ function validate(){
 
   return result;
 }
-
+// Age inputu için seçilen yıla göre yaşın hesaplanması
 function onChangeCalculateAge(selectedAge) {
    var today = new Date();
    var age = today.getFullYear() - selectedAge.value;
    document.getElementById("age").value = age;
 }
-
+//ikinci sayfa için yönlendirme 
 
 function passToThreePage(){
    window.location.href = 'financialGoalsPage.html';
+}
+//First name input ve last name input için string,
+// age input için rakam  kontrolüne uymaması durumunda yazmasını engelleme
+function checkInput(e){
+
+   const firstName = document.getElementById("firstName");
+   const lastName = document.getElementById("lasstName");
+   const age = document.getElementById("age");
+
+   let regexStr = /^[A-Za-z]+$/;
+   let regexNum =  /^[0-9]+$/;
+
+   let s = firstName.value;
+
+   if (!regexStr.test(s) ) {
+      firstName.value="";
+   }
+
+   let l = lastName.value;
+
+   if (!regexStr.test(l) ) {
+      lastName.value="";
+   }
+   let a = age.value;
+
+   if (!regexNum.test(a) ) {
+      age.value="";
+   }
+ 
 }

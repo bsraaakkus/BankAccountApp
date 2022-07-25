@@ -48,10 +48,10 @@
                 <div class="container header2 ">
                     <div class="row form-group">
                         <div class="col-6">
-                            <input type="text" name="First Name" id="firstName"  class="form-control" pattern="[A-Za-z]*" required="required" placeholder="First Name" autocomplete="off"/>  
+                            <input type="text" name="First Name" id="firstName"  class="form-control" pattern="[A-Za-z]*" onKeyUp="checkInput(this)" required="required" placeholder="First Name" autocomplete="off"/>  
                             </div>
                         <div class="col-6">
-                            <input type="text" name="Last Name" id="lasstName"  class="form-control" pattern="[A-Za-z]*" required placeholder="Last Name" autocomplete="off">
+                            <input type="text" name="Last Name" id="lasstName"  class="form-control" pattern="[A-Za-z]*" required placeholder="Last Name" onKeyUp="checkInput(this)"  autocomplete="off">
                         </div>
                     </div>
                     <div class="form-group"> 
@@ -75,11 +75,11 @@
                         </div>
                      </div>
                     <div class="form-group">
-                        <input type="text" name="Age" id="age"  class="form-control"  required  placeholder="Age" >
+                        <input type="text"  name="Age" id="age"  class="form-control"   required  placeholder="Age" onKeyUp="checkInput(this)" >
 
                     </div>
                     <div class="form-group">
-                        <button type="button" class="btnsubmit" id="btnsubmit"
+                        <button type="button"  class="btnsubmit" id="btnsubmit"
                         ></button>
 
                     </div>
